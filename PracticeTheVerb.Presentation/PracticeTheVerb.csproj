@@ -12,10 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Italian\Partials\condizionale\" />
-    <Folder Include="Views\Italian\Partials\congiuntivo\" />
     <Folder Include="Views\Italian\Partials\gerundio\" />
-    <Folder Include="Views\Italian\Partials\imperativo\" />
     <Folder Include="Views\Italian\Partials\infinitivo\" />
     <Folder Include="Views\Italian\Partials\participio\" />
   </ItemGroup>

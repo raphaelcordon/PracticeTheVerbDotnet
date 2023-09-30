@@ -95,16 +95,16 @@
         <div class="text-center"><h4>CONGIUNTIVO (Subjunctive)</h4></div>
         <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
             <!-- ##### Partial Presente ##### -->
-            {% include 'verbItaliano/italiano/partials/congiuntivo/presente.html' %}
+            @await Html.PartialAsync("Partials/congiuntivo/presente")
 
             <!-- ##### Partial Passato ##### -->
-            {% include 'verbItaliano/italiano/partials/congiuntivo/passato.html' %}
+            @await Html.PartialAsync("Partials/congiuntivo/passato")
 
             <!-- ##### Partial Imperfetto ##### -->
-            {% include 'verbItaliano/italiano/partials/congiuntivo/imperfetto.html' %}
+            @await Html.PartialAsync("Partials/congiuntivo/imperfetto")
 
             <!-- ##### Partial Trapassato ##### -->
-            {% include 'verbItaliano/italiano/partials/congiuntivo/trapassato.html' %}
+            @await Html.PartialAsync("Partials/congiuntivo/trapassato")
         </div>
     </div>
 </div>
@@ -118,7 +118,7 @@
         <div class="text-center"><h4>Imperativo (Imperative)</h4></div>
         <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
             <!-- ##### Partial Imperativo ##### -->
-            {% include 'verbItaliano/italiano/partials/imperativo/presente.html' %}
+            @await Html.PartialAsync("Partials/imperativo/presente")
         </div>
     </div>
 </div>

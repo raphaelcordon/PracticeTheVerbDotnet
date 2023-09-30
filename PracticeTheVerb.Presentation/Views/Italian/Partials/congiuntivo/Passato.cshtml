@@ -1,0 +1,120 @@
+﻿@using PracticeTheVerb.Domain.Entities.Italian;
+@using PracticeTheVerb.Domain.Entities;
+@model ResultViewEntity<ItalianVerb>;
+
+@{
+    var verb = Model.Data;
+}
+<div class="col pt-1 pb-1">
+    <div class="p-3 border bg-light">
+        <div class="text-center">Passato (Past)</div>
+        <form id="formcongiuntivoPassato">
+            <table class="table table-borderless p-0 m-0">
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoPassatoIo"> io </span>
+                            <input type="text" class="form-control" id="excongiuntivoPassatoIo" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivopassatoio" id="answercongiuntivoPassatoIo" hidden>
+                            <span class="CSSverbsAnswercongiuntivoPassatoIo">@verb.congiuntivopassatoio</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoPassatoTu"> tu </span>
+                            <input type="text" class="form-control" id="excongiuntivoPassatoTu" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivopassatotu" id="answercongiuntivoPassatoTu" hidden>
+                            <span class="CSSverbsAnswercongiuntivoPassatoTu">@verb.congiuntivopassatotu</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoPassatoLui">lui</span>
+                            <input type="text" class="form-control" id="excongiuntivoPassatoLui" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivopassatolui" id="answercongiuntivoPassatoLui" hidden>
+                            <span class="CSSverbsAnswercongiuntivoPassatoLui">@verb.congiuntivopassatolui</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoPassatoNoi">noi</span>
+                            <input type="text" class="form-control" id="excongiuntivoPassatoNoi" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivopassatonoi" id="answercongiuntivoPassatoNoi" hidden>
+                            <span class="CSSverbsAnswercongiuntivoPassatoNoi">@verb.congiuntivopassatonoi</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoPassatoVoi">voi</span>
+                            <input type="text" class="form-control" id="excongiuntivoPassatoVoi" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivopassatovoi" id="answercongiuntivoPassatoVoi" hidden>
+                            <span class="CSSverbsAnswercongiuntivoPassatoVoi">@verb.congiuntivopassatovoi</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoPassatoLoro">loro</span>
+                            <input type="text" class="form-control" id="excongiuntivoPassatoLoro" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivopassatoloro" id="answercongiuntivoPassatoLoro" hidden>
+                            <span class="CSSverbsAnswercongiuntivoPassatoLoro">@verb.congiuntivopassatoloro</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-center">
+                        <div class="input-group input-group-sm">
+                            <button type="button" class="btn btn-outline-primary" id="answercongiuntivoPassato">Controlla</button>&nbsp;
+                            <button type="button" class="btn btn-outline-secondary" id="ricominciacongiuntivoPassato">Ricomincia</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,108 @@
+﻿@using PracticeTheVerb.Domain.Entities.Italian;
+@using PracticeTheVerb.Domain.Entities;
+@model ResultViewEntity<ItalianVerb>;
+
+@{
+    var verb = Model.Data;
+}
+<div class="col pt-1 pb-1">
+    <div class="p-3 border bg-light">
+        <div class="text-center">Passato (Past)</div>
+        <form id="formcondizionalePassato">
+            <table class="table table-borderless p-0 m-0">
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="condizionalePassatoIo"> io </span>
+                            <input type="text" class="form-control" id="excondizionalePassatoIo" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+                            <input type="text" class="form-control" value="{{ condizionale.condizionalePassatoIo }}" id="answercondizionalePassatoIo" hidden>
+                            <span class="CSSverbsAnswercondizionalePassatoIo">{{ condizionale.condizionalePassatoIo }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="condizionalePassatoTu"> tu </span>
+                            <input type="text" class="form-control" id="excondizionalePassatoTu" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+                            <input type="text" class="form-control" value="{{ condizionale.condizionalePassatoTu }}" id="answercondizionalePassatoTu" hidden>
+                            <span class="CSSverbsAnswercondizionalePassatoTu">{{ condizionale.condizionalePassatoTu }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="condizionalePassatoLui">lui</span>
+                            <input type="text" class="form-control" id="excondizionalePassatoLui" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+                            <input type="text" class="form-control" value="{{ condizionale.condizionalePassatoLui }}" id="answercondizionalePassatoLui" hidden>
+                            <span class="CSSverbsAnswercondizionalePassatoLui">{{ condizionale.condizionalePassatoLui }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="condizionalePassatoNoi">noi</span>
+                            <input type="text" class="form-control" id="excondizionalePassatoNoi" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+                            <input type="text" class="form-control" value="{{ condizionale.condizionalePassatoNoi }}" id="answercondizionalePassatoNoi" hidden>
+                            <span class="CSSverbsAnswercondizionalePassatoNoi">{{ condizionale.condizionalePassatoNoi }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="condizionalePassatoVoi">voi</span>
+                            <input type="text" class="form-control" id="excondizionalePassatoVoi" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+                            <input type="text" class="form-control" value="{{ condizionale.condizionalePassatoVoi }}" id="answercondizionalePassatoVoi" hidden>
+                            <span class="CSSverbsAnswercondizionalePassatoVoi">{{ condizionale.condizionalePassatoVoi }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="condizionalePassatoLoro">loro</span>
+                            <input type="text" class="form-control" id="excondizionalePassatoLoro" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+                            <input type="text" class="form-control" value="{{ condizionale.condizionalePassatoLoro }}" id="answercondizionalePassatoLoro" hidden>
+                            <span class="CSSverbsAnswercondizionalePassatoLoro">{{ condizionale.condizionalePassatoLoro }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-center">
+                        <div class="input-group input-group-sm">
+                            <button type="button" class="btn btn-outline-primary" id="answercondizionalePassato">Controlla</button>&nbsp;
+                            <button type="button" class="btn btn-outline-secondary" id="ricominciacondizionalePassato">Ricomincia</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

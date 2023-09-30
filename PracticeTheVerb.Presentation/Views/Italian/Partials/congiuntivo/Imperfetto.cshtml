@@ -1,0 +1,120 @@
+﻿@using PracticeTheVerb.Domain.Entities.Italian;
+@using PracticeTheVerb.Domain.Entities;
+@model ResultViewEntity<ItalianVerb>;
+
+@{
+    var verb = Model.Data;
+}
+<div class="col pt-1 pb-1">
+    <div class="p-3 border bg-light">
+        <div class="text-center">Imperfetto (Imperfect)</div>
+        <form id="formcongiuntivoImperfetto">
+            <table class="table table-borderless p-0 m-0">
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoImperfettoIo"> io </span>
+                            <input type="text" class="form-control" id="excongiuntivoImperfettoIo" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivoimperfettoio" id="answercongiuntivoImperfettoIo" hidden>
+                            <span class="CSSverbsAnswercongiuntivoImperfettoIo">@verb.congiuntivoimperfettoio</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoImperfettoTu"> tu </span>
+                            <input type="text" class="form-control" id="excongiuntivoImperfettoTu" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivoimperfettotu" id="answercongiuntivoImperfettoTu" hidden>
+                            <span class="CSSverbsAnswercongiuntivoImperfettoTu">@verb.congiuntivoimperfettotu</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoImperfettoLui">lui</span>
+                            <input type="text" class="form-control" id="excongiuntivoImperfettoLui" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivoimperfettolui " id="answercongiuntivoImperfettoLui" hidden>
+                            <span class="CSSverbsAnswercongiuntivoImperfettoLui">@verb.congiuntivoimperfettolui </span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoImperfettoNoi">noi</span>
+                            <input type="text" class="form-control" id="excongiuntivoImperfettoNoi" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivoimperfettonoi" id="answercongiuntivoImperfettoNoi" hidden>
+                            <span class="CSSverbsAnswercongiuntivoImperfettoNoi">@verb.congiuntivoimperfettonoi</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoImperfettoVoi">voi</span>
+                            <input type="text" class="form-control" id="excongiuntivoImperfettoVoi" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivoimperfettovoi" id="answercongiuntivoImperfettoVoi" hidden>
+                            <span class="CSSverbsAnswercongiuntivoImperfettoVoi">@verb.congiuntivoimperfettovoi</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoImperfettoLoro">loro</span>
+                            <input type="text" class="form-control" id="excongiuntivoImperfettoLoro" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivoimperfettoloro" id="answercongiuntivoImperfettoLoro" hidden>
+                            <span class="CSSverbsAnswercongiuntivoImperfettoLoro">@verb.congiuntivoimperfettoloro</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-center">
+                        <div class="input-group input-group-sm">
+                            <button type="button" class="btn btn-outline-primary" id="answercongiuntivoImperfetto">Controlla</button>&nbsp;
+                            <button type="button" class="btn btn-outline-secondary" id="ricominciacongiuntivoImperfetto">Ricomincia</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

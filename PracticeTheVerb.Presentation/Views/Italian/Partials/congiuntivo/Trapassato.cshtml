@@ -1,0 +1,120 @@
+﻿@using PracticeTheVerb.Domain.Entities.Italian;
+@using PracticeTheVerb.Domain.Entities;
+@model ResultViewEntity<ItalianVerb>;
+
+@{
+    var verb = Model.Data;
+}
+<div class="col pt-1 pb-1">
+    <div class="p-3 border bg-light">
+        <div class="text-center">Trapassato (Pluperfect)</div>
+        <form id="formcongiuntivoTrapassato">
+            <table class="table table-borderless p-0 m-0">
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoTrapassatoIo"> io </span>
+                            <input type="text" class="form-control" id="excongiuntivoTrapassatoIo" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivotrapassatoio" id="answercongiuntivoTrapassatoIo" hidden>
+                            <span class="CSSverbsAnswercongiuntivoTrapassatoIo">@verb.congiuntivotrapassatoio</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoTrapassatoTu"> tu </span>
+                            <input type="text" class="form-control" id="excongiuntivoTrapassatoTu" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivotrapassatotu" id="answercongiuntivoTrapassatoTu" hidden>
+                            <span class="CSSverbsAnswercongiuntivoTrapassatoTu">@verb.congiuntivotrapassatotu</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoTrapassatoLui">lui</span>
+                            <input type="text" class="form-control" id="excongiuntivoTrapassatoLui" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivotrapassatolui" id="answercongiuntivoTrapassatoLui" hidden>
+                            <span class="CSSverbsAnswercongiuntivoTrapassatoLui">@verb.congiuntivotrapassatolui</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoTrapassatoNoi">noi</span>
+                            <input type="text" class="form-control" id="excongiuntivoTrapassatoNoi" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivotrapassatonoi" id="answercongiuntivoTrapassatoNoi" hidden>
+                            <span class="CSSverbsAnswercongiuntivoTrapassatoNoi">@verb.congiuntivotrapassatonoi</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoTrapassatoVoi">voi</span>
+                            <input type="text" class="form-control" id="excongiuntivoTrapassatoVoi" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivotrapassatovoi" id="answercongiuntivoTrapassatoVoi" hidden>
+                            <span class="CSSverbsAnswercongiuntivoTrapassatoVoi">@verb.congiuntivotrapassatovoi</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="congiuntivoTrapassatoLoro">loro</span>
+                            <input type="text" class="form-control" id="excongiuntivoTrapassatoLoro" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.congiuntivotrapassatoloro" id="answercongiuntivoTrapassatoLoro" hidden>
+                            <span class="CSSverbsAnswercongiuntivoTrapassatoLoro">@verb.congiuntivotrapassatoloro</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-center">
+                        <div class="input-group input-group-sm">
+                            <button type="button" class="btn btn-outline-primary" id="answercongiuntivoTrapassato">Controlla</button>&nbsp;
+                            <button type="button" class="btn btn-outline-secondary" id="ricominciacongiuntivoTrapassato">Ricomincia</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
