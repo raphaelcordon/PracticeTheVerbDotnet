@@ -1,0 +1,309 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+/* CSS for Smartphones */
+
+@media screen and (max-width: 480px) {
+
+    .indexLogo {
+        max-width: 300px;
+    }
+
+    .indexBetterExperience {
+        font-size: 18px;
+    }
+}
+
+
+/* CSS for Tablets */
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+
+    .indexLogo {
+        max-width: 350px;
+    }
+
+    .indexBetterExperience {
+        font-size: 22px;
+    }
+}
+
+
+/* CSS for Big Screens */
+
+@media screen and (min-width: 801px) {
+
+    .indexLogo {
+        max-width: 500px;
+    }
+
+    .indexBetterExperience {
+        font-size: 26px;
+    }
+}
+
+
+/* ----------------------- */
+/* ----  GENERAL CODE ---- */
+/* ----------------------- */
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 11, 167);
+    opacity: 50%;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+    #myBtn:hover {
+        background-color: #555;
+    }
+
+
+/*  BACKGROUND  */
+.bg {
+    background: url(../image/pexels-gizem-7939051.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: white;
+}
+
+.bgIndex {
+    background: url(../image/bgIndex.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: white;
+}
+
+/*  ---   ALL THE PAGES   ---  */
+
+/*  Transparent backgroung to Verbs DIV  */
+.bgTransparentVerbs {
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+
+/*  FOOTER  */
+
+footer {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    background: black;
+    color: #ffffff;
+    padding: 3% 0 !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+    footer a {
+        color: white;
+    }
+
+        footer a:hover {
+            color: oldlace;
+        }
+
+.logoFooter {
+    width: 65% !important;
+    height: 65% !important;
+}
+
+/*  EFFECTS TO THE VERB PAGE  */
+
+#shineVerb {
+    background-color: rgb(248, 249, 250);
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    from {
+        background-color: rgb(0, 89, 255);
+    }
+
+    to {
+        background-color: rgb(248, 249, 250);
+    }
+
+    from {
+        color: white;
+    }
+
+    to {
+        color: black;
+    }
+}
+
+.indexLogo {
+    min-width: 100px;
+    height: auto;
+}
+
+.logoTopMenu {
+    max-width: 200px;
+    height: auto;
+}
+
+.imageFlags {
+    min-width: 35%;
+    max-width: 45%;
+    height: auto;
+}
+
+.greyColor {
+    color: gray;
+}
+
+.indexBetterExperience {
+    color: rgb(0, 139, 42);
+    animation-name: shineBetterExperience;
+    animation-duration: 6s;
+}
+
+@keyframes shineBetterExperience {
+    from {
+        color: white;
+    }
+
+    to {
+        color: rgb(0, 139, 42);
+    }
+}
+
+.indexButtons {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 139, 42);
+    opacity: 90%;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 12px;
+}
+
+    .indexButtons:hover {
+        background-color: #555;
+    }
+
+.fontShadow {
+    text-shadow: 2px 2px #bdbdbd;
+}
+
+hr {
+    border-bottom: 2px solid #bdbdbd !important;
+}
+
+.imageInstructions {
+    width: 100%;
+    height: auto;
+}
+
+.textUpercase {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+
+/* CSS for BUTTONS OF VERBS */
+
+a.button2 {
+    background-color: rgba(255,255,255, 0.5);
+    display: inline-flex;
+    padding: 0.1em 1em;
+    border: 0.15em solid rgb(0, 139, 42);
+    margin: 0.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    color: rgb(0, 139, 42);
+    text-align: center;
+    transition: all 0.15s;
+    border-radius: 20px;
+}
+
+    a.button2:hover {
+        color: #8f8f8f;
+        border-color: #8f8f8f;
+    }
+
+    a.button2:active {
+        color: #913c3c;
+        border-color: #913c3c;
+    }
+
+@media all and (max-width:30em) {
+    a.button2 {
+        display: inline-flex;
+        margin: 0.2em;
+        padding: 0.2em 0.5em;
+    }
+
+    .bouncy {
+        animation: bouncy 5s infinite linear;
+        position: relative;
+    }
+
+    @keyframes bouncy {
+        0% {
+            top: 0em
+        }
+
+        40% {
+            top: 0em
+        }
+
+        43% {
+            top: -0.9em
+        }
+
+        46% {
+            top: 0em
+        }
+
+        48% {
+            top: -0.4em
+        }
+
+        50% {
+            top: 0em
+        }
+
+        100% {
+            top: 0em;
+        }
+    }
+}

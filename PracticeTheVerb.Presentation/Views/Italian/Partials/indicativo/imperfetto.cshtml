@@ -1,0 +1,120 @@
+﻿@using PracticeTheVerb.Domain.Entities.Italian;
+@using PracticeTheVerb.Domain.Entities;
+@model ResultViewEntity<ItalianVerb>;
+
+@{
+    var verb = Model.Data;
+}
+<div class="col pt-1 pb-1">
+    <div class="p-3 border bg-light">
+        <div class="text-center">Imperfetto (Imperfect)</div>
+        <form id="formindicativoImperfetto">
+            <table class="table table-borderless p-0 m-0">
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoImperfettoIo"> io </span>
+                            <input type="text" class="form-control" id="exindicativoImperfettoIo" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativoimperfettoio" id="answerindicativoImperfettoIo" hidden>
+                            <span class="CSSverbsAnswerindicativoImperfettoIo">@verb.indicativoimperfettoio</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoImperfettoTu"> tu </span>
+                            <input type="text" class="form-control" id="exindicativoImperfettoTu" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativoimperfettotu" id="answerindicativoImperfettoTu" hidden>
+                            <span class="CSSverbsAnswerindicativoImperfettoTu">@verb.indicativoimperfettotu</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoImperfettoLui">lui</span>
+                            <input type="text" class="form-control" id="exindicativoImperfettoLui" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativoimperfettolui" id="answerindicativoImperfettoLui" hidden>
+                            <span class="CSSverbsAnswerindicativoImperfettoLui">@verb.indicativoimperfettolui</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoImperfettoNoi">noi</span>
+                            <input type="text" class="form-control" id="exindicativoImperfettoNoi" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativoimperfettonoi" id="answerindicativoImperfettoNoi" hidden>
+                            <span class="CSSverbsAnswerindicativoImperfettoNoi">@verb.indicativoimperfettonoi</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoImperfettoVoi">voi</span>
+                            <input type="text" class="form-control" id="exindicativoImperfettoVoi" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativoimperfettovoi" id="answerindicativoImperfettoVoi" hidden>
+                            <span class="CSSverbsAnswerindicativoImperfettoVoi">@verb.indicativoimperfettovoi</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoImperfettoLoro">loro</span>
+                            <input type="text" class="form-control" id="exindicativoImperfettoLoro" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativoimperfettoloro" id="answerindicativoImperfettoLoro" hidden>
+                            <span class="CSSverbsAnswerindicativoImperfettoLoro">@verb.indicativoimperfettoloro</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-center">
+                        <div class="input-group input-group-sm">
+                            <button type="button" class="btn btn-outline-primary" id="answerindicativoImperfetto">Controlla</button>&nbsp;
+                            <button type="button" class="btn btn-outline-secondary" id="ricominciaindicativoImperfetto">Ricomincia</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

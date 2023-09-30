@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PracticeTheVerb.Infrastructure\PracticeTheVerb.Infrastructure.csproj" />
+    <ProjectReference Include="..\PracticeTheVerb.Api\PracticeTheVerb.Api.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Italian\Partials\condizionale\" />
+    <Folder Include="Views\Italian\Partials\congiuntivo\" />
+    <Folder Include="Views\Italian\Partials\gerundio\" />
+    <Folder Include="Views\Italian\Partials\imperativo\" />
+    <Folder Include="Views\Italian\Partials\infinitivo\" />
+    <Folder Include="Views\Italian\Partials\participio\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,120 @@
+﻿@using PracticeTheVerb.Domain.Entities.Italian;
+@using PracticeTheVerb.Domain.Entities;
+@model ResultViewEntity<ItalianVerb>;
+
+@{
+    var verb = Model.Data;
+}
+<div class="col pt-1 pb-1">
+    <div class="p-3 border bg-light">
+        <div class="text-center">Passato Remoto (Simple past)</div>
+        <form id="formindicativoPassatoRemoto">
+            <table class="table table-borderless p-0 m-0">
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoPassatoRemotoIo"> io </span>
+                            <input type="text" class="form-control" id="exindicativoPassatoRemotoIo" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativopassatoremotoio" id="answerindicativoPassatoRemotoIo" hidden>
+                            <span class="CSSverbsAnswerindicativoPassatoRemotoIo">@verb.indicativopassatoremotoio</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoPassatoRemotoTu"> tu </span>
+                            <input type="text" class="form-control" id="exindicativoPassatoRemotoTu" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativopassatoremototu" id="answerindicativoPassatoRemotoTu" hidden>
+                            <span class="CSSverbsAnswerindicativoPassatoRemotoTu">@verb.indicativopassatoremototu</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoPassatoRemotoLui">lui</span>
+                            <input type="text" class="form-control" id="exindicativoPassatoRemotoLui" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativopassatoremotolui" id="answerindicativoPassatoRemotoLui" hidden>
+                            <span class="CSSverbsAnswerindicativoPassatoRemotoLui">@verb.indicativopassatoremotolui</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoPassatoRemotoNoi">noi</span>
+                            <input type="text" class="form-control" id="exindicativoPassatoRemotoNoi" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativopassatoremotonoi" id="answerindicativoPassatoRemotoNoi" hidden>
+                            <span class="CSSverbsAnswerindicativoPassatoRemotoNoi">@verb.indicativopassatoremotonoi</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoPassatoRemotoVoi">voi</span>
+                            <input type="text" class="form-control" id="exindicativoPassatoRemotoVoi" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativopassatoremotovoi" id="answerindicativoPassatoRemotoVoi" hidden>
+                            <span class="CSSverbsAnswerindicativoPassatoRemotoVoi">@verb.indicativopassatoremotovoi</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoPassatoRemotoLoro">loro</span>
+                            <input type="text" class="form-control" id="exindicativoPassatoRemotoLoro" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativopassatoremotoloro" id="answerindicativoPassatoRemotoLoro" hidden>
+                            <span class="CSSverbsAnswerindicativoPassatoRemotoLoro">@verb.indicativopassatoremotoloro</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-center">
+                        <div class="input-group input-group-sm">
+                            <button type="button" class="btn btn-outline-primary" id="answerindicativoPassatoRemoto">Controlla</button>&nbsp;
+                            <button type="button" class="btn btn-outline-secondary" id="ricominciaindicativoPassatoRemoto">Ricomincia</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,176 @@
+﻿@using PracticeTheVerb.Domain.Entities.Italian;
+@using PracticeTheVerb.Domain.Entities;
+@model ResultViewEntity<ItalianVerb>;
+
+@{
+    ViewData["Title"] = "Italian Verb";
+    var verb = Model.Data;
+}
+
+<!-- Main Buttons controlling all -->
+<div class="container pb-4 text-center">
+    <div class="row row-cols-1">
+        <div class="col">
+            <h4 class="p-3 border" id="shineVerb">Verbo @(verb.infinitivopresente[0].ToString().ToUpper())@verb.infinitivopresente.Substring(1)</h4>
+            <button type="button" class="btn btn-outline-primary btn-lg btn-block" id="controllaTutti">Controlla tutti / Check them all</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg btn-block" id="ricominciaTutti">Cancella tutto / Clear all</button>
+        </div>
+    </div>
+</div>
+
+<!-- Verbs INDICATIVO START-->
+<div class="container">
+    <div class="p-3 border bgTransparentVerbs">
+        <div class="text-center"><h4>INDICATIVO (Indicative)</h4></div>
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
+
+            <!-- ##### Partial Presente ##### -->
+            @await Html.PartialAsync("Partials/indicativo/presente")
+
+            <!-- ##### Partial Passato Prossimo ##### -->
+            @await Html.PartialAsync("Partials/indicativo/passatoProssimo")
+
+            <!-- ##### Partial Imperfetto ##### -->
+            @await Html.PartialAsync("Partials/indicativo/imperfetto")
+
+            <!-- ##### Partial Trapassato Prossimo ##### -->
+            @await Html.PartialAsync("Partials/indicativo/trapassatoProssimo")
+
+            <!-- ##### Partial Passato Remoto ##### -->
+            @await Html.PartialAsync("Partials/indicativo/passatoRemoto")
+
+            <!-- ##### Partial Passato Remoto ##### -->
+            @await Html.PartialAsync("Partials/indicativo/trapassatoRemoto")
+
+            <!-- ##### Partial Futuro Semplice ##### -->
+            @await Html.PartialAsync("Partials/indicativo/futuroSemplice")
+
+            <!-- ##### Partial Futuro Anteriore ##### -->
+            @await Html.PartialAsync("Partials/indicativo/futuroAnteriore")
+        </div>
+    </div>
+</div>
+
+
+<!-- Verbs CONDIZIONALE -->
+
+<!-- DIVISION LINE -->
+<div class="container"><hr></div>
+
+<div class="container">
+    <div class="p-3 border bgTransparentVerbs">
+        <div class="text-center"><h4>Condizionale (Conditional)</h4></div>
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
+            <!-- ##### Partial Presente ##### -->
+            {% include 'verbItaliano/italiano/partials/condizionale/riflessivopresente.html' %}
+
+            <!-- ##### Partial Passato ##### -->
+            {% include 'verbItaliano/italiano/partials/condizionale/riflessivopassato.html' %}
+        </div>
+    </div>
+</div>
+
+<!-- DIVISION LINE -->
+<div class="container"><hr></div>
+
+<div class="container">
+    <div class="p-3 border bgTransparentVerbs">
+        <div class="text-center"><h4>Condizionale (Conditional)</h4></div>
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
+            <!-- ##### Partial Presente ##### -->
+            {% include 'verbItaliano/italiano/partials/condizionale/presente.html' %}
+
+            <!-- ##### Partial Passato ##### -->
+            {% include 'verbItaliano/italiano/partials/condizionale/passato.html' %}
+        </div>
+    </div>
+</div>
+
+<!-- DIVISION LINE -->
+<div class="container"><hr></div>
+<!-- Verbs INDICATIVO END-->
+<!-- Verbs CONGIUNTIVO START-->
+<div class="container">
+    <div class="p-3 border bgTransparentVerbs">
+        <div class="text-center"><h4>CONGIUNTIVO (Subjunctive)</h4></div>
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
+            <!-- ##### Partial Presente ##### -->
+            {% include 'verbItaliano/italiano/partials/congiuntivo/presente.html' %}
+
+            <!-- ##### Partial Passato ##### -->
+            {% include 'verbItaliano/italiano/partials/congiuntivo/passato.html' %}
+
+            <!-- ##### Partial Imperfetto ##### -->
+            {% include 'verbItaliano/italiano/partials/congiuntivo/imperfetto.html' %}
+
+            <!-- ##### Partial Trapassato ##### -->
+            {% include 'verbItaliano/italiano/partials/congiuntivo/trapassato.html' %}
+        </div>
+    </div>
+</div>
+
+<!-- DIVISION LINE -->
+<div class="container"><hr></div>
+<!-- Verbs CONGIUNTIVO END-->
+<!-- Verbs IMPERATIVO START -->
+<div class="container">
+    <div class="p-3 border bgTransparentVerbs">
+        <div class="text-center"><h4>Imperativo (Imperative)</h4></div>
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
+            <!-- ##### Partial Imperativo ##### -->
+            {% include 'verbItaliano/italiano/partials/imperativo/presente.html' %}
+        </div>
+    </div>
+</div>
+
+<!-- DIVISION LINE -->
+<div class="container"><hr></div>
+<!-- Verbs IMPERATIVO END -->
+<!-- Verbs INFINITO START-->
+<div class="container">
+    <div class="p-3 border bgTransparentVerbs">
+        <div class="text-center"><h4>INFINITO (Infinitive)</h4></div>
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
+            <!-- ##### Partial Infinito ##### -->
+            {% include 'verbItaliano/italiano/partials/infinitivo/presente.html' %}
+
+            <!-- ##### Partial Infinito Passato ##### -->
+            {% include 'verbItaliano/italiano/partials/infinitivo/passato.html' %}
+        </div>
+    </div>
+</div>
+
+<!-- DIVISION LINE -->
+<div class="container"><hr></div>
+<!-- Verbs INFINITO END-->
+<!-- Verbs PARTICIPIO START -->
+<div class="container">
+    <div class="p-3 border bgTransparentVerbs">
+        <div class="text-center"><h4>PARTICIPIO (Participle)</h4></div>
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
+            <!-- ##### Partial Participio ##### -->
+            {% include 'verbItaliano/italiano/partials/participio/presente.html' %}
+
+            <!-- ##### Partial Passato ##### -->
+            {% include 'verbItaliano/italiano/partials/participio/passato.html' %}
+        </div>
+    </div>
+</div>
+
+<!-- DIVISION LINE -->
+<div class="container"><hr></div>
+<!-- Verbs PARTICIPIO END -->
+<!-- Verbs GERUNDIO START-->
+<div class="container">
+    <div class="p-3 border bgTransparentVerbs">
+        <div class="text-center"><h4>GERUNDIO (Gerund)</h4></div>
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
+            <!-- ##### Partial Presente ##### -->
+            {% include 'verbItaliano/italiano/partials/gerundio/presente.html' %}
+
+            <!-- ##### Partial Passato ##### -->
+            {% include 'verbItaliano/italiano/partials/gerundio/passato.html' %}
+        </div>
+    </div>
+</div>
+<!-- Verbs GERUNDIO END-->

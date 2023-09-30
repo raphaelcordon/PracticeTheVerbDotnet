@@ -1,0 +1,51 @@
+﻿
+@{
+    var italianMainVerbs = ViewData["italianMainVerbs"] as List<string>;
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <img src="~/image/logo.png" class="indexLogo"
+         alt="practiceTheVerb.com,
+                                  Verbs for practising in different languages and verb tenses">
+</div>
+<div class="text-center m-2 p-2">
+    <p class="indexBetterExperience"><i class="fas fa-tv">&nbsp; Better experience on wide screens !!!</i></p>
+</div>
+<div class="container text-center p-4">
+    <article class="container">
+        <div class="row">
+            <table class="table">
+                <tr>
+                    <td class="text-center align-middle">
+                        <a href="{{ url_for('verbIta.italianoMain') }}">
+                            <button class="indexButtons" type="button">
+                                <b>Italian Verbs' Full list<br>Elenco completo dei verbi italiani</b>
+                            </button><br>
+                            <img src="~/image/flags/italy.png" class="imageFlags"
+                                 alt="Verbs in Italian for practising / Verbi in italiano per esercitarsi">
+                        </a>
+
+                        <div>
+                            <h4 class="pt-1 mt-1">TOP 20:</h4>
+                            @foreach (var item in italianMainVerbs)
+                            {
+                                <a href="{{ url_for('verbIta.italianoVerbo', verbo=item) }}"
+                                   class="button2 bouncy m-1">@item</a>
+                            }
+                        </div>
+                    </td>
+                </tr>
+                <!--<tr>
+                    <td class="text-center align-middle">
+                        <button class="indexButtons" type="button"><b>English Verbs | Unavailable</b></button><br>
+                        <img class="imageFlags" src="{{ url_for('static', filename='verbItaliano/image/flags/ukConstruction.png') }}" alt="English Module is under construction">
+                    </td>
+                </tr>-->
+            </table>
+        </div>
+    </article>
+    <br>
+    <p>&nbsp;</p>
+
+</div>

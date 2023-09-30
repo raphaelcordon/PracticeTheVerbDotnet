@@ -1,0 +1,118 @@
+﻿@using PracticeTheVerb.Domain.Entities.Italian;
+@using PracticeTheVerb.Domain.Entities;
+@model ResultViewEntity<ItalianVerb>;
+
+@{
+    var verb = Model.Data;
+}
+<div class="col pt-1 pb-1">
+    <div class="p-3 border bg-light">
+        <div class="text-center">Presente (Present)</div>
+        <form id="formindicativoPresente">
+            <table class="table table-borderless p-0 m-0">
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoPresenteIo"> io </span>
+                            <input type="text" class="form-control" id="exindicativoPresenteIo" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+                            <input type="text" class="form-control" value="@verb.indicativopresenteio" id="answerindicativoPresenteIo" hidden>
+                            <span class="CSSverbsAnswerindicativoPresenteIo">@verb.indicativopresenteio</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoPresenteTu"> tu </span>
+                            <input type="text" class="form-control" id="exindicativoPresenteTu" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativopresentetu" id="answerindicativoPresenteTu" hidden>
+                            <span class="CSSverbsAnswerindicativoPresenteTu">@verb.indicativopresentetu</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoPresenteLui">lui</span>
+                            <input type="text" class="form-control" id="exindicativoPresenteLui" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativopresentelui" id="answerindicativoPresenteLui" hidden>
+                            <span class="CSSverbsAnswerindicativoPresenteLui">@verb.indicativopresentelui</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoPresenteNoi">noi</span>
+                            <input type="text" class="form-control" id="exindicativoPresenteNoi" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativopresentenoi" id="answerindicativoPresenteNoi" hidden>
+                            <span class="CSSverbsAnswerindicativoPresenteNoi">@verb.indicativopresentenoi</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoPresenteVoi">voi</span>
+                            <input type="text" class="form-control" id="exindicativoPresenteVoi" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativopresentevoi" id="answerindicativoPresenteVoi" hidden>
+                            <span class="CSSverbsAnswerindicativoPresenteVoi">@verb.indicativopresentevoi</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="indicativoPresenteLoro">loro</span>
+                            <input type="text" class="form-control" id="exindicativoPresenteLoro" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+
+                            <input type="text" class="form-control" value="@verb.indicativopresenteloro" id="answerindicativoPresenteLoro" hidden>
+                            <span class="CSSverbsAnswerindicativoPresenteLoro">@verb.indicativopresenteloro</span>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-center">
+                        <div class="input-group input-group-sm">
+                            <button type="button" class="btn btn-outline-primary" id="answerindicativoPresente">Controlla</button>&nbsp;
+                            <button type="button" class="btn btn-outline-secondary" id="ricominciaindicativoPresente">Ricomincia</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
