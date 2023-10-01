@@ -32,6 +32,10 @@ include('/js/congiuntivo/trapassato.js');
 include('/js/condizionale/presente.js');
 include('/js/condizionale/passato.js');
 
+/* Include JS Verbs RIFLESSIVO */
+include('/js/riflessivo/presente.js');
+include('/js/riflessivo/passato.js');
+
 /* Include JS Verbs IMPERATIVO */
 include('/js/imperativo/presente.js');
 

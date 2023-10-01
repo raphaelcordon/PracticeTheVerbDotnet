@@ -9,7 +9,7 @@ public class DataContext : DbContext
 	public DbSet<ItalianVerb> ItalianVerbs { get; set; }
 	protected override void OnConfiguring(DbContextOptionsBuilder options)
 	{
-		options.UseMySQL("server=localhost;database=RaphaelCordon;user=root;password=root");
+		options.UseMySQL("server=localhost;database=RaphaelCordon;user=root;password=SYL@5150");
 	}
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
 	{

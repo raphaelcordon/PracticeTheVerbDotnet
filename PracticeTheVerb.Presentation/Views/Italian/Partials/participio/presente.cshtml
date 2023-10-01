@@ -1,0 +1,37 @@
+@using PracticeTheVerb.Domain.Entities.Italian;
+@using PracticeTheVerb.Domain.Entities;
+@model ResultViewEntity<ItalianVerb>;
+
+@{
+    var verb = Model.Data;
+}
+<div class="col pt-1 pb-1">
+    <div class="p-3 border bg-light">
+        <div class="text-center">Presente (Present)</div>
+        <form id="formparticipioPresente">
+            <table class="table table-borderless p-0 m-0">
+                <tr>
+                    <td class="pb-0 mb-0">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" id="exparticipioPresente" oninput="this.value = this.value.toLowerCase()">
+                        </div>
+                    </td>
+                    <td class="pb-0 mb-0">
+                        <div>
+                            <input type="text" class="form-control" value="@verb.participiopresente" id="answerparticipioPresenteIo" hidden>
+                            <span class="CSSverbsAnswerparticipioPresente">@verb.participiopresente</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-center">
+                        <div class="input-group input-group-sm">
+                            <button type="button" class="btn btn-outline-primary" id="answerparticipioPresente">Controlla</button>&nbsp;
+                            <button type="button" class="btn btn-outline-secondary" id="ricominciaparticipioPresente">Ricomincia</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

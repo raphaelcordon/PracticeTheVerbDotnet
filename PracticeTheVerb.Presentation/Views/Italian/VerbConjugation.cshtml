@@ -62,10 +62,10 @@
         <div class="text-center"><h4>Condizionale (Conditional)</h4></div>
         <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
             <!-- ##### Partial Presente ##### -->
-            {% include 'verbItaliano/italiano/partials/condizionale/riflessivopresente.html' %}
+            @await Html.PartialAsync("Partials/condizionale/presente")
 
             <!-- ##### Partial Passato ##### -->
-            {% include 'verbItaliano/italiano/partials/condizionale/riflessivopassato.html' %}
+            @await Html.PartialAsync("Partials/condizionale/passato")
         </div>
     </div>
 </div>
@@ -75,13 +75,13 @@
 
 <div class="container">
     <div class="p-3 border bgTransparentVerbs">
-        <div class="text-center"><h4>Condizionale (Conditional)</h4></div>
+        <div class="text-center"><h4>Riflessivo (Reflexive)</h4></div>
         <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
             <!-- ##### Partial Presente ##### -->
-            {% include 'verbItaliano/italiano/partials/condizionale/presente.html' %}
+            @await Html.PartialAsync("Partials/riflessivo/presente")
 
             <!-- ##### Partial Passato ##### -->
-            {% include 'verbItaliano/italiano/partials/condizionale/passato.html' %}
+             @await Html.PartialAsync("Partials/riflessivo/passato")
         </div>
     </div>
 </div>
@@ -132,10 +132,10 @@
         <div class="text-center"><h4>INFINITO (Infinitive)</h4></div>
         <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
             <!-- ##### Partial Infinito ##### -->
-            {% include 'verbItaliano/italiano/partials/infinitivo/presente.html' %}
+            @await Html.PartialAsync("Partials/infinitivo/presente")
 
             <!-- ##### Partial Infinito Passato ##### -->
-            {% include 'verbItaliano/italiano/partials/infinitivo/passato.html' %}
+             @await Html.PartialAsync("Partials/infinitivo/passato")
         </div>
     </div>
 </div>
@@ -149,10 +149,10 @@
         <div class="text-center"><h4>PARTICIPIO (Participle)</h4></div>
         <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
             <!-- ##### Partial Participio ##### -->
-            {% include 'verbItaliano/italiano/partials/participio/presente.html' %}
+            @await Html.PartialAsync("Partials/participio/presente")
 
             <!-- ##### Partial Passato ##### -->
-            {% include 'verbItaliano/italiano/partials/participio/passato.html' %}
+             @await Html.PartialAsync("Partials/participio/passato")
         </div>
     </div>
 </div>
@@ -166,10 +166,10 @@
         <div class="text-center"><h4>GERUNDIO (Gerund)</h4></div>
         <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
             <!-- ##### Partial Presente ##### -->
-            {% include 'verbItaliano/italiano/partials/gerundio/presente.html' %}
+            @await Html.PartialAsync("Partials/gerundio/presente")
 
             <!-- ##### Partial Passato ##### -->
-            {% include 'verbItaliano/italiano/partials/gerundio/passato.html' %}
+            @await Html.PartialAsync("Partials/gerundio/passato")
         </div>
     </div>
 </div>

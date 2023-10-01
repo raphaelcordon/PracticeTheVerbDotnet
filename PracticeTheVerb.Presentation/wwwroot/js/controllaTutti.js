@@ -19,15 +19,18 @@ $(document).on('click', "#ricominciaTutti", function () {
 // Cleaning the form C O N D I Z I O N A L E
     cleancondizionalePassato();
     cleancondizionalePresente();
-
+    
+// Cleaning the form R I F L E S S I V O
+    cleanriflessivoPassato();
+    cleanriflessivoPresente();
+    
 // Cleaning the form I M P E R A T I V O
     cleanimperativoPresente();
 
 // Cleaning the form I N F I N I T I V O
     cleaninfinitivoPassato();
     cleaninfinitivoPresente();
-
-
+    
 // Cleaning the P A R T I C I P I O
     cleanparticipioPassato();
     cleanparticipioPresente();
@@ -59,6 +62,10 @@ $(document).on('click', "#controllaTutti", function () {
 // Checking the form C O N D I Z I O N A L E
     runcondizionalePassato();
     runcondizionalePresente();
+
+// Checking the form R I F L E S S I V O
+    runriflessivoPassato();
+    runriflessivoPresente();
 
 // Cleaning the form I M P E R A T I V O
     runimperativoPresente();

@@ -11,10 +11,4 @@
     <ProjectReference Include="..\PracticeTheVerb.Api\PracticeTheVerb.Api.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Italian\Partials\gerundio\" />
-    <Folder Include="Views\Italian\Partials\infinitivo\" />
-    <Folder Include="Views\Italian\Partials\participio\" />
-  </ItemGroup>
-
 </Project>
