@@ -30,7 +30,7 @@
                             <h4 class="pt-1 mt-1">TOP 20:</h4>
                             @foreach (var item in italianMainVerbs)
                             {
-                                <a href="{{ url_for('verbIta.italianoVerbo', verbo=item) }}"
+                                <a asp-controller="Italian" asp-action="verbconjugation" asp-route-verbRequested="@item"
                                    class="button2 bouncy m-1">@item</a>
                             }
                         </div>

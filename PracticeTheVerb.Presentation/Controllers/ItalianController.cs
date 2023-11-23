@@ -3,6 +3,8 @@ using PracticeTheVerb.API.Services.Italian;
 
 namespace PracticeTheVerb.Controllers;
 
+[Controller]
+[Route("[controller]")]
 public class ItalianController : Controller
 {
     private readonly ItalianVerbService _italianService;
@@ -11,10 +13,10 @@ public class ItalianController : Controller
         _italianService = italianService;
     }
 
-
-    public async Task<ActionResult> VerbConjugation(string verbRequested)
+    [HttpGet("verbconjugation/{verbRequested}")]
+    public async Task<ActionResult> VerbConjugation([FromRoute] string verbRequested)
     {
-        var verb = await _italianService.GetVerb("andare");
+        var verb = await _italianService.GetVerb(verbRequested);
         ViewData["verb"] = verb;
 
         return View(verb);

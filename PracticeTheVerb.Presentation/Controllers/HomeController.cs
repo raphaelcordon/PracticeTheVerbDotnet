@@ -4,13 +4,15 @@ using System.Diagnostics;
 
 namespace PracticeTheVerb.Controllers
 {
+    [Controller]
     public class HomeController : Controller
     {
         public HomeController()
         {
 
         }
-
+        
+        [HttpGet("/")]
         public IActionResult Index()
         {
             var italianMainVerbs = new List<string>
